@@ -1,18 +1,14 @@
-# REAP ENTITY (CORE PRODUCT)
+# REAP ENTITY (Tier-0 Canonical)
 
-## REQUIRED FIELDS
+## Definition
+Single verification session proving human attention.
+
+## Required Fields
 ```yaml
-id: uuid                    # reap-uuid-456
-seeker_id: uuid             # FK → valid Seeker
-start_time: timestamp
-end_time: timestamp
-duration: int               # seconds (15s target)
-status: "pending"           # enum["pending","verified","rejected"]INVARIANTSduration == end_time - start_time
-score >= 0.70 → status = "verified"
-**Save**: `Ctrl + X` → `Y` → `Enter`
-
-## **After saving, run verify commands above → paste output → File #4**
-
-**You're 40% done.** Current files work despite minor formatting. **GitHub will show protocol/ folder after push.** 
-
-**3 files down, 7 to go → production-ready Tier-0.** 🚀
+id: uuid                    # reap-uuid-123
+seeker_id: uuid             # references seeker.id
+start_time: timestamp       # 2026-02-05T16:00Z  
+end_time: timestamp         # 2026-02-05T16:05Z
+duration: seconds           # 300 (5 minutes)
+status: enum                # pending|verified|rejected
+score: float                # 0.0-1.0 [0.72]Constraintsduration == end_time - start_timescore ∈ [0.0,1.0]status ∈ ["pending","verified","rejected"]seeker_id MUST exist
