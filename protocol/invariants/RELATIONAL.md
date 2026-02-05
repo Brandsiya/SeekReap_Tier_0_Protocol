@@ -1,3 +1,3 @@
 1. seeker.id = reap.seeker_id (FK constraint)
 2. reap.status="verified" → COUNT(behavior) >= 3
-3. behavior.reap_id references valid reap
+3. behavior.reap_id → valid reap
