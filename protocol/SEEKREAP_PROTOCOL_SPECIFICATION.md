@@ -388,11 +388,11 @@ Input:  reap_id
 Output: {status: "verified" | "rejected", score: float}
 Side Effects: Updates reap.status, reap.score
 Invariants: §5.3 (score), §5.5 (count), §5.6 (threshold)
-8.5 fire_pixel(reap_id: UUID)
-Input:  reap_id (MUST be verified)
-Output: Event payload for Meta/YouTube
-Side Effects: External API call
-Invariants: None (implementation-specific)
+
+### 8.5 emit_verification_event(reap_id: UUID)
+**Purpose:** Signal verified Reap for monetization
+**Output:** VerificationEvent {reap_id, score, timestamp}
+
 9. IMPLEMENTATION FLOW
 9.1 Standard Verification Flow
 1. create_seeker()           → alice-uuid-123
