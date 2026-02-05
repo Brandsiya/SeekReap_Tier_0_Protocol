@@ -53,6 +53,17 @@ All such material belongs to **Tier 1 or higher**.
 
 ---
 
+## 🆕 Protocol Content
+
+SeekReap Tier 0 consists of two parts:
+
+### 1. Meta-Architecture (Governance)
+### 2. Domain Protocol (Specification)
+
+See [SEEKREAP_PROTOCOL_SPECIFICATION.md](./protocol/SEEKREAP_PROTOCOL_SPECIFICATION.md)
+
+---
+
 ## Canonical Documents
 
 | Document | Role |
