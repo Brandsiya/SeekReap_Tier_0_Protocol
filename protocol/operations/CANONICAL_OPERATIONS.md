@@ -1,0 +1,5 @@
+1. create_seeker()
+2. create_reap(seeker_id)
+3. record_behavior(reap_id, behavior)  
+4. verify_reap(reap_id)
+5. fire_pixel(reap_id)
