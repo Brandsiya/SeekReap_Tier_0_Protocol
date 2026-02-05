@@ -68,7 +68,7 @@ See [SEEKREAP_PROTOCOL_SPECIFICATION.md](./protocol/SEEKREAP_PROTOCOL_SPECIFICAT
 
 | Document | Role |
 |--------|------|
-| [MASTER_INDEX.md](./MASTER_INDEX) | Canonical index of all Tier-0 documents |
+| [MASTER_INDEX.md](./MASTER_INDEX.md) | Canonical index of all Tier-0 documents |
 | [TIER0_OVERVIEW.md](./TIER0_OVERVIEW.md) | Definition of Tier-0 purpose and scope |
 | [TIER_BOUNDARY_CONTRACT.md](./TIER_BOUNDARY_CONTRACT.md) | Formal boundary between Tier-0 and higher tiers |
 | [FREEZE_ANNOUNCEMENT.md](./FREEZE_ANNOUNCEMENT.md) | Permanent immutability invariant |
