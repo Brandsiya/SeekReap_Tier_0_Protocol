@@ -2,6 +2,8 @@
 
 This index lists **all and only** the canonical, normative documents that constitute SeekReap Tier 0.
 
+No document outside this list has Tier-0 authority.
+
 ## Canonical Tier-0 Documents
 
 ### Governance & Meta-Architecture
