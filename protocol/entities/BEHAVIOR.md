@@ -31,7 +31,7 @@ Type must match taxonomy
 Intensity bounds enforced
 Timestamp must be valid
 
-##Examples
+## Examples
 ```yaml
 {
   "id": "b1",
