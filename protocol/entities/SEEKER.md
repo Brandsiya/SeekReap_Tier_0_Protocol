@@ -12,6 +12,7 @@ status: enum
 ## Optional Fields
 ```yaml
 reaps: array[uuid]
+
 metadata: object
 ```
 ## Constraints
@@ -39,3 +40,8 @@ Terminal: terminated
   "status": "active"
 }
 ```
+## Reference
+REAP.md
+BEHAVIOR.md
+STATE_MACHINES.md
+TAXONOMY.md
