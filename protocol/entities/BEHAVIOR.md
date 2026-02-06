@@ -1,4 +1,3 @@
-Copy code
 # BEHAVIOR ENTITY (Tier-0 Canonical)
 
 ## Definition
@@ -12,8 +11,6 @@ type: enum
 intensity: float
 timestamp: timestamp
 Optional Fields
-Copy code
-Yaml
 metadata: object
 Constraints
 reap_id MUST reference a valid Reap
@@ -30,8 +27,6 @@ Type must match taxonomy
 Intensity bounds enforced
 Timestamp must be valid
 Examples
-Copy code
-Yaml
 {
   "id": "b1",
   "reap_id": "reap-456",

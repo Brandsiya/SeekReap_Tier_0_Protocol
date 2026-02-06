@@ -9,8 +9,6 @@ id: uuid
 created_at: timestamp
 status: enum
 Optional Fields
-Copy code
-Yaml
 reaps: array[uuid]
 metadata: object
 Constraints
@@ -28,8 +26,6 @@ active → terminated
 paused → terminated
 Terminal: terminated
 Examples
-Copy code
-Yaml
 {
   "id": "alice-uuid-123",
   "created_at": "2026-02-05T16:00:00Z",
