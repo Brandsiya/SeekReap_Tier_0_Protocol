@@ -12,11 +12,33 @@ end_time: timestamp
 duration: int
 status: enum
 ```
-## Optional fields
+## Optional Fields
+```yaml
 score: float
-behaviors: array[uuid]
 
+behaviors: array[uuid]
+```
 ## Constraints
 duration == end_time - start_time
 score ∈ [0.0,1.0]
 status ∈ ["pending","verified","rejected"]
+
+## Relationships
+ONE Reap -> ONE Seeker
+MANY Behaviors -> ONE Reap
+
+## Examples
+```yaml
+{
+  "id": "reap-456",
+  "seeker_id": "alice-uuid-123",
+  "start_time": "2026-02-05T16:00:00Z",
+  "end_time": "2026-02-05T16:05:00Z",
+  "duration": 300,
+  "status": "verified"
+}
+```
+## Reference
+SEEKER.md
+BEHAVIOR.md
+TAXONOMY.md
