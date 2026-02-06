@@ -1,8 +1,6 @@
 # REAP ENTITY (Tier-0 Canonical)
-
 ## Definition
 Single verification session proving human attention.
-
 ## Required Fields
 ```yaml
 id: uuid
@@ -12,23 +10,18 @@ end_time: timestamp
 duration: int
 status: enum
 ```
-<<<<<<< HEAD
-
 ## Optional Fields
 ```yaml
 score: float
 behaviors: array[uuid]
 ```
-
 ## Constraints
 duration == end_time - start_time
 score ∈ [0.0,1.0]
 status ∈ ["pending","verified","rejected"]
-
 ## Relationships
 ONE Reap -> ONE Seeker
 MANY Behaviors -> ONE Reap
-
 ## Examples
 ```yaml
 {
@@ -44,12 +37,3 @@ MANY Behaviors -> ONE Reap
 SEEKER.md
 BEHAVIOR.md
 TAXONOMY.md
-=======
-## Optional fields
-score: float
-behaviors: array[uuid]
-
-## Constraints
-duration == end_time - start_timescore ∈ [0.0,1.0]status ∈ ["pending","verified","rejected"]
-
->>>>>>> 87ddceb (Tier-0 formatting complete: 100% clean)
