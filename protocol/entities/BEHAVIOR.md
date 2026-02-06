@@ -19,7 +19,7 @@ intensity MUST be in range [0.0, 1.0]
 timestamp MUST be within Reap start/end time
 Each type has a fixed weight (see TAXONOMY.md)
 Relationships
-ONE Behavior → ONE Reap
+ONE Behavior -> ONE Reap
 Behaviors aggregate into Reap score
 Validation Rules
 Reap must exist

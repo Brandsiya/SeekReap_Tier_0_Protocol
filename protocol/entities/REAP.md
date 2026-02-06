@@ -1,11 +1,18 @@
-## Optional Fields
+# REAP ENTITY (Tier-0 Canonical)
+
+## Definition
+Single verification session proving human attention.
+
+## Required Fields
 ```yaml
-score: float                # 0.0-1.0 (calculated from behaviors)
+id: uuid
+seeker_id: uuid
+start_time: timestamp
+end_time: timestamp
+duration: int
+status: enum
+## Optional fields
+score: float
 behaviors: array[uuid]
-metadata: object
 Constraints
-duration MUST equal end_time - start_time
-score MUST be in range [0.0, 1.0]
-status MUST be one of ["pending","verified","rejected"]
-seeker_id MUST reference existing Seeker
-If status="verified": score >= 0.70 AND behaviors >= 3
+duration == end_time - start_timescore ∈ [0.0,1.0]status ∈ ["pending","verified","rejected"]
