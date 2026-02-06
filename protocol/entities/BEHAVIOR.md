@@ -24,7 +24,7 @@ Each type has a fixed weight (see TAXONOMY.md)
 
 ## Relationships
 ONE Behavior -> ONE Reap
-Behaviors aggregate into Reap
+Behaviors aggregate into Reap score
 
 ## Examples
 ```yaml
