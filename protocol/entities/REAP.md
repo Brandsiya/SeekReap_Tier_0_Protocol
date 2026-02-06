@@ -12,6 +12,7 @@ end_time: timestamp
 duration: int
 status: enum
 ```
+<<<<<<< HEAD
 
 ## Optional Fields
 ```yaml
@@ -43,3 +44,12 @@ MANY Behaviors -> ONE Reap
 SEEKER.md
 BEHAVIOR.md
 TAXONOMY.md
+=======
+## Optional fields
+score: float
+behaviors: array[uuid]
+
+## Constraints
+duration == end_time - start_timescore ∈ [0.0,1.0]status ∈ ["pending","verified","rejected"]
+
+>>>>>>> 87ddceb (Tier-0 formatting complete: 100% clean)
