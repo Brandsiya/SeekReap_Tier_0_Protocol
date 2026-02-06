@@ -12,8 +12,9 @@ intensity: float
 timestamp: timestamp
 ```
 ## Optional Fields
+```yaml
 metadata: object
-
+```
 ## Constraints
 reap_id MUST reference a valid Reap
 type MUST be one of ["playback","viewport","volume","mouse_entropy","timing","hover"]
@@ -23,13 +24,7 @@ Each type has a fixed weight (see TAXONOMY.md)
 
 ## Relationships
 ONE Behavior -> ONE Reap
-Behaviors aggregate into Reap score
-
-## Validation Rules
-Reap must exist
-Type must match taxonomy
-Intensity bounds enforced
-Timestamp must be valid
+Behaviors aggregate into Reap
 
 ## Examples
 ```yaml
