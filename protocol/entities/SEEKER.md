@@ -1,9 +1,37 @@
 # SEEKER ENTITY (Tier-0 Canonical)
 
-## REQUIRED FIELDS
-```yaml
-id: uuid                    # alice-uuid-123
-created_at: timestamp       # 2026-02-05T16:00Z
-status: "active"           # enum["active","paused","terminated"]CONSTRAINTSid globally uniqueValid status transitions only
-**Save & Exit**: `Ctrl + X` → `Y` → `Enter`
+## Definition
+End-user proving attention to content.
 
+## Required Fields
+```yaml
+id: uuid
+created_at: timestamp
+status: enum
+Optional Fields
+Copy code
+Yaml
+reaps: array[uuid]
+metadata: object
+Constraints
+id MUST be globally unique
+status MUST be one of ["active","paused","terminated"]
+created_at MUST be ISO 8601
+State transitions MUST follow STATE_MACHINES.md
+Relationships
+ONE Seeker → MANY Reaps
+State Machine
+Initial: active
+active → paused
+paused → active
+active → terminated
+paused → terminated
+Terminal: terminated
+Examples
+Copy code
+Yaml
+{
+  "id": "alice-uuid-123",
+  "created_at": "2026-02-05T16:00:00Z",
+  "status": "active"
+}
