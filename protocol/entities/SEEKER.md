@@ -8,26 +8,34 @@ End-user proving attention to content.
 id: uuid
 created_at: timestamp
 status: enum
-Optional Fields
+```
+## Optional Fields
+```yaml
 reaps: array[uuid]
 metadata: object
-Constraints
+```
+## Constraints
 id MUST be globally unique
 status MUST be one of ["active","paused","terminated"]
 created_at MUST be ISO 8601
 State transitions MUST follow STATE_MACHINES.md
-Relationships
+
+## Relationships
 ONE Seeker → MANY Reaps
-State Machine
+
+## State Machine
 Initial: active
 active → paused
 paused → active
 active → terminated
 paused → terminated
 Terminal: terminated
-Examples
+
+## Examples
+```yaml
 {
   "id": "alice-uuid-123",
   "created_at": "2026-02-05T16:00:00Z",
   "status": "active"
 }
+```
