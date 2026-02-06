@@ -17,4 +17,6 @@ score: float
 behaviors: array[uuid]
 
 ## Constraints
-duration == end_time - start_timescore ∈ [0.0,1.0]status ∈ ["pending","verified","rejected"]
+duration == end_time - start_time
+score ∈ [0.0,1.0]
+status ∈ ["pending","verified","rejected"]
