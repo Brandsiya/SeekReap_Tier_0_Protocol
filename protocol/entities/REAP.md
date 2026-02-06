@@ -12,12 +12,13 @@ end_time: timestamp
 duration: int
 status: enum
 ```
+
 ## Optional Fields
 ```yaml
 score: float
-
 behaviors: array[uuid]
 ```
+
 ## Constraints
 duration == end_time - start_time
 score ∈ [0.0,1.0]
