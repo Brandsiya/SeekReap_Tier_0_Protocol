@@ -11,8 +11,10 @@ start_time: timestamp
 end_time: timestamp
 duration: int
 status: enum
+```
 ## Optional fields
 score: float
 behaviors: array[uuid]
-Constraints
+
+## Constraints
 duration == end_time - start_timescore ∈ [0.0,1.0]status ∈ ["pending","verified","rejected"]
