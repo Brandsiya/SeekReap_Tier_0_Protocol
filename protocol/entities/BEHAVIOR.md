@@ -10,9 +10,11 @@ reap_id: uuid
 type: enum
 intensity: float
 timestamp: timestamp
-Optional Fields
+```
+## Optional Fields
 metadata: object
-Constraints
+
+## Constraints
 reap_id MUST reference a valid Reap
 type MUST be one of ["playback","viewport","volume","mouse_entropy","timing","hover"]
 intensity MUST be in range [0.0, 1.0]
